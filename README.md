@@ -7,6 +7,7 @@ Maybe more to come, for now just replacing reserved keywords and some functions.
 
 Samples, of course you need to be able to see UTF-8!
 
+Switch / If / Goto
 ```
 ∑ <stdio.h>
 
@@ -19,7 +20,7 @@ Samples, of course you need to be able to see UTF-8!
       ← 5;
     ◔ 3:
       ⇉("It's a three!!\n");
-      break;
+      ↕;
     ◕:
       ⇉("No idea??\n");
   }
@@ -34,17 +35,18 @@ end:
 }
 ```
 
+Finding a prime
 ```
 ∑ <stdio.h>
 
-♢ ♧ ⁑ two = 2;
+♢ ♧ ⚟ ⁑ two = 2;
 
 ⁑ ⚐() {
   ⁑ n, c;
- 
+
   ⇉("Enter a number\n");
   ⇇("%d", &n);
- 
+
   △(n == two) {
     ⇉("Prime number.\n");
   }▽{
@@ -62,6 +64,7 @@ end:
 }
 ```
 
+Struct / str / functions
 ```
 ∑ <stdio.h>
 ∑ <string.h>
@@ -75,11 +78,11 @@ end:
 
 ⁑ ⚐() {
   stru g;
- 
+
   ✄(g.name, "This is a string");
   ⁑ cmp = ⚇(g.name, "no?");
   g.num = 11;
- 
+
   ⇉("Name: %s\n", g.name);
   ⇉("Number: %d\n", g.num);
   fn();
@@ -88,8 +91,9 @@ end:
 }
 
 ◇ fn() {
-  ⁑ c = 1;
+  ‡ c = 1;
   ∞(c <= 10) {
+    △(c <= 3) ↔;
     ⇉("%d ", c);
     c++;
   }
@@ -97,6 +101,7 @@ end:
 
 ```
 
+File functions
 ```
 ∑ <stdio.h>
 ∑ <stdlib.h>
@@ -129,7 +134,7 @@ types
   * 9729 2601 ☁ typedef
   * 9728 2600 ☀ struct
   * 9880 2698 ⚘ enum
-  
+
 type modifiers
 
   * 9826 2662 ♢ static
@@ -153,11 +158,11 @@ control
   * 9741 260D ☍ for
   * 8734 221E ∞ while
   * 8733 221D ∝ do
-  
+
   * 9673 25C9 ◉ switch
   * 9684 25D4 ◔ case
   * 9685 25D5 ◕ default
-  
+
   * 8594 2192 → goto
   * 8592 2190 ← return
   * 8596 2194 ↔ continue
