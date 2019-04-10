@@ -6,6 +6,7 @@ It's basically C with simple reserved keyword substitution.
 Maybe more to come, for now just replacing reserved keywords and some functions.
 
 Samples, of course you need to be able to see UTF-8!
+And surely Qbert knows this language.
 
 Switch / If / Goto
 ```
